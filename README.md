@@ -1,2 +1,2 @@
 # shivamdhakad.github.io
-ROBOTIC AND MECHANICAL PORTFOLIO
+Personal Website
