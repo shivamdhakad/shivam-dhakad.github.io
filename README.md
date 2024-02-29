@@ -1,31 +1,84 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# Hugo Profile | [Wiki Page](https://github.com/gurusabarish/hugo-profile/wiki)
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+[![Twitter](https://img.shields.io/twitter/url?label=Tweet&style=social&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile) [![GitHub forks](https://img.shields.io/github/forks/gurusabarish/hugo-profile?style=plastic)](https://github.com/gurusabarish/hugo-profile/network) [![GitHub stars](https://img.shields.io/github/stars/gurusabarish/hugo-profile?style=plastic)](https://github.com/gurusabarish/hugo-profile/stargazers)
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c1dcb34-cada-4c80-82b7-cfdbdbd7c774/deploy-status)](https://app.netlify.com/sites/hugo-profile/deploys)
+![Latest Release](https://img.shields.io/github/v/release/gurusabarish/hugo-profile?include_prereleases)
+![Last Commit](https://img.shields.io/github/last-commit/gurusabarish/hugo-profile)
+![Open Issues](https://img.shields.io/github/issues/gurusabarish/hugo-profile?color=important)
+![Open Pull Requests](https://img.shields.io/github/issues-pr/gurusabarish/hugo-profile?color=yellowgreen)
+![License](https://img.shields.io/github/license/gurusabarish/hugo-profile)
 
-# Instructions
+A high performance and mobile first hugo template for personal portfolio and blog
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+- Example Site: [hugo-profile.netlify.app](https://hugo-profile.netlify.app)
 
-See more info at https://academicpages.github.io/
+# Features
+- Fully Responsive
+- Minimalist Design
+- SEO Friendly.
+- Light/Dark/auto
+- Taxonomies
+- [Color customization](https://github.com/gurusabarish/hugo-profile/wiki/Color-Customization)
+- Analytics Support 
+  - [Google Analytics](https://gohugo.io/templates/internal/#google-analytics)
+- Comment Support
+  - [Disqus](https://gohugo.io/content-management/comments/)
+- Integration with [FormSpree](https://formspree.io/) for submitting "Contact me" form
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+Technology used: Bootstrap, fontawesome 
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+# Requirements
+- Hugo Version 0.87.0 or higher
 
-# Changelog -- bugfixes and enhancements
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+# How to use this template
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+- [Hugo theme](#Hugo-theme)
+- [Direct deployment using netlify](#Direct-deployment-using-netlify)
+
+[For more details](https://github.com/gurusabarish/hugo-profile/wiki)
+## Hugo theme
+
+- Install Hugo and create a site using `hugo new site my-site --format="yaml"`
+- Clone this repo inside your themes folder
+```
+cd themes
+git clone https://github.com/gurusabarish/hugo-profile.git
+```
+- Create config.yaml (you can use `config.toml` too) inside root folder 
+- Setup the configurations in `config.yaml`. [reference](https://github.com/gurusabarish/hugo-profile/blob/master/exampleSite/config.yaml)
+- You should have the mentioned (_inside the config file_) images in static folder to use them.
+
+For more details: [Hugo's official docs](https://gohugo.io/getting-started/quick-start/), [content management](https://www.mikedane.com/static-site-generators/hugo/content-organization/)
+
+## Direct deployment using netlify
+
+- Fork this repo or create new repo using `use this template` button and connect repo to netlify.
+- whenever you customize the files exampleSite folder, netlify will automatically deploy your changes.
+
+For more details: [host on netlify](https://gohugo.io/hosting-and-deployment/hosting-on-netlify/), [content management](https://www.mikedane.com/static-site-generators/hugo/content-organization/)
+
+# Deployment
+
+Run `hugo`. It will generate a folder called public. You can use the files inside public folder for deployment. You should delete the public folder for each time when you are using `hugo` command.
+
+# Issues
+
+If you have a question, please [open an issue](https://github.com/gurusabarish/hugo-profile/issues) for help and to help those who come after you. The more information you can provide, the better!
+
+# Contributing
+
+Contributions, issues, and feature requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+# License
+
+Licensed under [MIT](LICENSE)
+
+# 🤝 Support
+
+Give a ⭐️ or buy me a ~`coffee`~ tea if you like this project!
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Q5Q7BFFGU)
+
+<a href="https://www.buymeacoffee.com/gurusabarish" target="_blank" rel="noopener"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="40" width="145" alt="Buy Me A Coffee"></a>
