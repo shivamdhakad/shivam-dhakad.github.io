@@ -1,6 +1,6 @@
-baseURL: "https://hugo-profile.netlify.app"
+baseURL: "https://shivamdhakad.github.io/"
 languageCode: "en-us"
-title: "Hugo Profile"
+title: "Portfolio"
 theme: hugo-profile
 
 outputs:
@@ -140,12 +140,12 @@ params:
     socialLinks:
       fontAwesomeIcons:
         - icon: fab fa-github
-          url: https://example.com
+          url: https://github.com/shivamdhakad
         - icon: fab fa-x-twitter
           url: https://example.com
       customIcons:
         - icon: /fav.png
-          url: "https://example.com"
+          url: "https://www.linkedin.com/in/shivam-dhakad/"
 
   # About
   about:
